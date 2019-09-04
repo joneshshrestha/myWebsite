@@ -415,7 +415,7 @@ h2 {
 	/* TITLE & CONTACT */
 	.title { top: 15%;}
 	.contact .icons { margin-bottom: 0px; }
-	.moreinfo .icons { margin-bottom: 0px; }
+	.moreinfo .icons { margin-top: 0px; }
 	/* SIZES */
 	.sphere img{
 		-webkit-transform: scale(0.6);
@@ -494,7 +494,7 @@ h2 {
 	/* TITLE & CONTACT */
 	.title { top: 15%;}
 	.contact .icons { margin-bottom: 0px; }
-	.moreinfo .icons { margin-bottom: 0px; }
+	.moreinfo .icons { margin-top: 0px; }
 	/* SIZES */
 	.sphere img{
 		-webkit-transform: scale(0.6);
@@ -659,8 +659,8 @@ h2 {
 	.title { top: 15%;}
 	.contact { bottom: 8%; }
 	.contact .icons { margin-bottom: 12px; }
-	.moreinfo { bottom: 8%; }
-	.moreinfo .icons { margin-bottom: 12px; }
+	.moreinfo { top: 8%; }
+	.moreinfo .icons { margin-top: 12px; }
 	/* SIZES */
 	.sphere img{
 		-webkit-transform: scale(1);
