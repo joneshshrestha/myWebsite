@@ -1,0 +1,44 @@
+* {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 15px;
+  background-color: black;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-header img {
+  object-fit: cover;
+  max-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.flex-header h5 {
+  line-height: 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 120px;
+}
+
+.flex-header strong {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.flex-header i {
+  font-size: 20px;
+  margin-right: 10px;
+}
