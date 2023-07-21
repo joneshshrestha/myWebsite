@@ -106,7 +106,9 @@ body {
 
 .project a:hover,
 .all-post a:hover {
-  text-decoration: underline 1px black;
+  color: rgba(104, 104, 104);
+  text-decoration: underline 1px rgba(104, 104, 104, 0.6);
+  text-underline-offset: 3px;
 }
 
 .recent-post {
