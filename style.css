@@ -154,3 +154,29 @@ body {
   margin-top: 5px;
   text-align: right;
 }
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.flex-footer {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.social-icons a {
+  color: rgba(7, 60, 82, 0.7);
+}
+
+.social-icons i {
+  margin-left: 12px;
+}
+
+.footer-end {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.8);
+}
