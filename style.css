@@ -9,7 +9,7 @@ body {
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 15px;
-  background-color: black;
+  background-color: #fefeff;
 }
 
 .flex-header {
@@ -27,7 +27,6 @@ body {
 
 .flex-header h5 {
   line-height: 16px;
-  color: white;
   font-size: 14px;
   font-weight: 500;
   margin-right: 120px;
@@ -41,4 +40,39 @@ body {
 .flex-header i {
   font-size: 20px;
   margin-right: 10px;
+}
+
+.typewriter {
+  margin-top: 95px;
+}
+
+.typewriter h1 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-top: 10px;
+}
+
+#text {
+  display: inline-block;
+  font-weight: 500;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 35px;
+  animation: blink 1s step-end infinite;
+  background-color: black;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  45% {
+    background-color: black;
+  }
 }
