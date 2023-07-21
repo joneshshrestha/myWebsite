@@ -84,3 +84,73 @@ body {
   line-height: 23px;
   color: rgba(0, 0, 0, 0.7);
 }
+
+.project {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.project button,
+.all-post button {
+  text-decoration: none;
+  border: none;
+  background-color: #fefeff;
+}
+
+.project a,
+.all-post a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0ba4e8;
+}
+
+.project a:hover,
+.all-post a:hover {
+  text-decoration: underline 1px black;
+}
+
+.recent-post {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog li {
+  padding-left: 8px;
+}
+
+.blog li::marker {
+  color: rgba(104, 104, 104, 0.3);
+}
+
+.row-line {
+  border-top: 1px solid rgba(104, 104, 104, 0.2);
+  margin-bottom: 13px;
+  margin-top: 20px;
+}
+
+.blog a {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  line-height: 25px;
+}
+
+.blog h6 {
+  font-size: 13px;
+  color: rgba(104, 104, 104, 0.9);
+  margin-top: 12px;
+}
+
+.all-post {
+  margin-top: 5px;
+  text-align: right;
+}
