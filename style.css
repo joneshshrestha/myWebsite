@@ -47,10 +47,10 @@ body {
 }
 
 .typewriter h1 {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: -0.5px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 #text {
@@ -75,4 +75,12 @@ body {
   45% {
     background-color: black;
   }
+}
+
+.bio {
+  margin-top: 30px;
+  font-size: 15.5px;
+  text-align: justify;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.7);
 }
