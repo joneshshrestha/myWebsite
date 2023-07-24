@@ -1,5 +1,4 @@
-// List of sentences
-var _CONTENT = ['create stuff', 'build websites', 'design websites']
+const _CONTENT = ['create stuff', 'build websites', 'design websites']
 
 // Current sentence being processed
 var _PART = 0
@@ -17,8 +16,8 @@ var _ELEMENT = document.querySelector('#text')
 var _CURSOR = document.querySelector('#cursor')
 
 // Implements typing effect
-function Type() {
-  // Get substring with 1 characater added
+const Type = () => {
+  // Get substring with 1 character added
   var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1)
   _ELEMENT.innerHTML = text
   _PART_INDEX++
@@ -36,8 +35,8 @@ function Type() {
 }
 
 // Implements deleting effect
-function Delete() {
-  // Get substring with 1 characater deleted
+const Delete = () => {
+  // Get substring with 1 character deleted
   var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1)
   _ELEMENT.innerHTML = text
   _PART_INDEX--
@@ -53,7 +52,7 @@ function Delete() {
     _PART_INDEX = 0
 
     // Start to display the next sentence after some time
-    setTimeout(function () {
+    setTimeout(() => {
       _CURSOR.style.display = 'inline-block'
       _INTERVAL_VAL = setInterval(Type, 110)
     }, 200)
