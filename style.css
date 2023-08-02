@@ -274,3 +274,12 @@ body {
 .flex-mobile h5 {
   margin-left: 20px;
 }
+
+.social-mobile {
+  margin-top: 55px;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0px 0px 20px 32px;
+}
