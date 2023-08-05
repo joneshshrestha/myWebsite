@@ -98,10 +98,12 @@ body {
   text-decoration: none;
   border: none;
   background-color: #fefeff;
+  cursor: pointer;
 }
 
 .project a,
 .all-post a {
+  cursor: pointer;
   text-decoration: none;
   font-size: 14px;
   color: #0ba4e8;
@@ -367,7 +369,7 @@ body {
   border-radius: 12px;
 }
 
-.work-info h2 {
+.work-info a {
   font-size: 18px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.9);
@@ -406,7 +408,8 @@ body {
 }
 
 .uses a:hover,
-.blog a:hover {
+.blog a:hover,
+.work-info a:hover {
   color: #04587b;
   text-decoration-color: #0ba4e8;
 }
