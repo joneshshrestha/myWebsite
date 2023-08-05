@@ -43,7 +43,7 @@ body {
 }
 
 .typewriter h1 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 500;
   letter-spacing: -0.5px;
   margin-top: 12px;
@@ -75,8 +75,8 @@ body {
 
 .bio {
   margin-top: 30px;
-  font-size: 15.5px;
-  text-align: justify;
+  font-size: 16px;
+  text-align: left;
   line-height: 23px;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -128,12 +128,6 @@ body {
   color: rgba(104, 104, 104, 0.3);
 }
 
-.row-line {
-  border-top: 1px solid rgba(104, 104, 104, 0.2);
-  margin-bottom: 13px;
-  margin-top: 20px;
-}
-
 .blog a {
   font-size: 16px;
   font-weight: 300;
@@ -146,6 +140,12 @@ body {
   font-size: 13px;
   color: rgba(104, 104, 104, 0.9);
   margin-top: 12px;
+}
+
+.row-line {
+  border-top: 1px solid rgba(104, 104, 104, 0.2);
+  margin-bottom: 13px;
+  margin-top: 20px;
 }
 
 .all-post {
@@ -334,4 +334,43 @@ body {
     margin-left: 8vh;
     margin-right: 8vh;
   }
+}
+
+.work {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+  margin-top: 30px;
+}
+
+.company-logo {
+  align-self: center;
+}
+.company-logo > img {
+  width: auto;
+  height: 50px;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.work-info h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+.work-info h4 {
+  font-size: 14px;
+  color: rgb(104, 104, 104);
+  margin-top: 5px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.work-vertical-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
