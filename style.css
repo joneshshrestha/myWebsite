@@ -3,6 +3,7 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -294,7 +295,7 @@ body {
   padding: 0px 0px 20px 32px;
 }
 
-@media screen and (min-width: 750px), screen and (min-width: 1350px) {
+@media screen and (min-width: 750px) {
   .menu__btn,
   #menu__toggle,
   #image-header,
@@ -303,6 +304,13 @@ body {
   }
   .flex-header {
     display: inline-block;
+    max-width: 40vh;
+  }
+  .flex-mobile {
+    max-width: max-content;
+  }
+  .flex-mobile h5 {
+    margin-right: 0;
   }
   .menu__box {
     position: relative;
@@ -311,14 +319,14 @@ body {
     height: 100%;
     width: auto;
   }
-  .menu__box::after {
-    content: '';
+  .vl-menu {
     border-left: 1px solid rgba(104, 104, 104, 0.2);
     position: absolute;
     display: inline-block;
-    height: 100vh;
-    top: -30px;
-    right: 45px;
+    min-height: 100vh;
+    height: 100%;
+    left: -60px;
+    top: -14px;
   }
   .menu__item:hover {
     background-color: #fefeff;
@@ -326,15 +334,12 @@ body {
   .root {
     display: inline-block;
     position: absolute;
-    margin-left: 3vh;
-    margin-right: 5vh;
+    margin-left: 14%;
+    margin-right: 5%;
   }
-}
 
-@media screen and (min-width: 1350px) {
-  .root {
-    margin-left: 8vh;
-    margin-right: 8vh;
+  .row-line {
+    min-width: 90vh;
   }
 }
 
