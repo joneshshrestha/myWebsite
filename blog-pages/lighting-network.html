@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0e2fb08298.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/app.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Understanding the Lightning Network</title>
+  </head>
+  <body>
+    <header class="flex-header">
+      <img src="/img/logo.jpg" alt="Jonesh profile photo" id="image-header" />
+      <h5>
+        Jonesh Shrestha <br />
+        <strong>Software Engineer</strong>
+      </h5>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li class="flex-mobile">
+            <img src="/img/logo.jpg" alt="Jonesh profile photo" />
+            <h5>
+              Jonesh Shrestha <br />
+              <strong>Software Engineer</strong>
+            </h5>
+          </li>
+          <li>
+            <a class="menu__item" href="/index.html"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/work.html"
+              ><i class="fa-solid fa-briefcase"></i> Work</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/uses.html"
+              ><i class="fa-solid fa-screwdriver-wrench"></i> Uses</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="#"
+              ><i class="fa-solid fa-laptop-code"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/blog.html"
+              ><i class="fa-regular fa-pen-to-square"></i> Blog</a
+            >
+          </li>
+          <li class="social-mobile">Socials</li>
+          <li>
+            <a class="menu__item" href="https://twitter.com/shresthajonesh"
+              ><i class="fa-brands fa-twitter"></i> Twitter</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/JoneshResume.pdf" download
+              ><i class="fa-regular fa-file-lines"></i> Read CV</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="https://github.com/joneshshrestha/"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="root">
+      <div class="vl-menu"></div>
+      <div class="typewriter">
+        <h2>Understanding The Lightning Network</h2>
+      </div>
+      <div class="bio">
+        <h4>Introduction:</h4>
+        <p>
+          Welcome to the exciting world of Bitcoin transactions and the
+          Lightning Network! In this blog, I'll take you on a journey through
+          the fascinating process of sending money with Bitcoin and explore the
+          innovative Lightning Network that enables lightning-fast and
+          cost-effective transactions. Let's dive in!
+        </p>
+        <h4>Part 1: Bitcoin Transactions Made Easy</h4>
+        <p>
+          Sending money with Bitcoin may sound complex, but fear not! It's like
+          putting together a puzzle. To send money, you'll need an array or list
+          of inputs recorded on the blockchain. These inputs are Bitcoin scripts
+          that define the spending conditions, with the most common being the
+          digital signature corresponding to the address. Once you have the
+          inputs, you construct a transaction, and voilà! You've created a
+          payment where the money is going, which will become an input for
+          future transactions. Simple, right?
+        </p>
+        <h4>Part 2: Understanding the Bitcoin Script</h4>
+        <p>
+          The Bitcoin script may sound intimidating, but it's just a scripting
+          language written in Fourth (Stack Based) Programming Language. This
+          script is incorporated into outputs and defines the spending
+          conditions that must be fulfilled. The most common condition is the
+          Digital Signature, proving you can spend it, known as Paid to Public
+          Key Hash. There are other types too, like Multi-sig scripts used in
+          the Lightning Network and more complex conditional scripts in payment
+          channels.
+        </p>
+        <h4>Part 3: Exploring Multi-Signature Scripts</h4>
+        <p>
+          Multi-signature scripts add an extra layer of security by requiring
+          more than one signature to execute a transaction. It's like having a
+          team of signers, and with K of N signature schemes, you can predefine
+          N valid signatories. For example, a 2 of 3 signature scheme means
+          there are three signers, and any two of them can execute signatures
+          and spend from the address. A great way to enhance security and
+          control!
+        </p>
+        <h4>Part 4: The Magic of Time Locks</h4>
+        <p>
+          Time locks give you control over when Bitcoin scripts can be spent. By
+          setting a future time, the script becomes valid only after that time
+          is reached. It's like setting a timer for your transaction! The
+          CHECKLOCKTIMEVERIFY (CLTV) operand is used for this purpose, ensuring
+          that the script will only execute past the specified time. A clever
+          way to add an element of time-based security.
+        </p>
+        <h4>Part 5: Lightning Network - Fast, Cheap, and Secure</h4>
+        <p>
+          Enter the Lightning Network - the ingenious solution to increase
+          Bitcoin's scale and capacity while making transactions lightning-fast
+          and very affordable. It operates as an overlay Peer-to-Peer network
+          alongside Bitcoin, leveraging its consensus rules and security. The
+          Lightning Network uses Payment Channels that rely on Bitcoin's
+          security primitives to ensure trustless and noncustodial transactions.
+        </p>
+        <img
+          src="/img/lightning-1.png"
+          alt="Funding and Settlement Transactions"
+          class="blogimg lightning-image-1"
+        />
+        <h4>Part 6: Hash Time-Lock Contracts (HTLC)</h4>
+        <p>
+          In the Lightning Network, Hash Time-Lock Contracts (HTLC) offer a
+          different approach to multi-sig. Instead of using a digital signature,
+          they use a hash, a pre-image, and a time lock. It's like a secret
+          handshake! The recipient creates a secret (R), calculates its hash
+          (H), and shares it. Anyone with the secret can spend the transaction,
+          and if it's hashed and verified, they're good to go. Otherwise, they
+          can get a refund after a certain time - no funds stuck!
+        </p>
+        <img
+          src="/img/lightning-2.png"
+          alt="Hash Time-Lock Contracts example"
+          class="blogimg lightning-image-2"
+        />
+        <h4>Conclusion:</h4>
+        <p>
+          Congratulations! You've now mastered the art of Bitcoin transactions
+          and explored the wonders of the Lightning Network. Remember, it's all
+          about taking inputs, creating transactions, and securing them with
+          innovative scripts. With the Lightning Network, you can enjoy
+          lightning-fast, cheap, and secure transactions. So go ahead, embrace
+          the world of cryptocurrency with confidence, and enjoy the benefits of
+          a trustless and noncustodial system. Happy transacting!
+        </p>
+      </div>
+      <!-- <div class="work-vertical-flex">
+        <div>
+          <h2 class="recent-post">Recent Posts</h2>
+          <div class="blog">
+            <ol>
+              <li>
+                <div class="row-line"></div>
+                <a href="#">Understanding The Lightning Network</a>
+                <h6>July 24, 2021</h6>
+              </li>
+              <li>
+                <div class="row-line"></div>
+                <a href="#">Recursion in JavaScript and React Components</a>
+                <h6>June 12, 2021</h6>
+                <div class="row-line"></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div> -->
+
+      <footer>
+        <div class="flex-footer">
+          <p>&copy; 2016-2023 Jonesh Shrestha</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/joneshshrestha/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/shresthajonesh" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://github.com/joneshshrestha/" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/joneshshrestha/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="footer-end">
+          Built with <i class="fa-solid fa-heart"></i> in Kathmandu.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
