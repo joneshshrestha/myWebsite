@@ -469,6 +469,12 @@ body {
   margin-top: 50px;
 }
 
+code {
+  font-family: monospace;
+  border: 1px solid #e8e7e7;
+  background-color: #e8e7e7;
+}
+
 @media screen and (min-width: 750px) {
   .menu__btn,
   #menu__toggle,
