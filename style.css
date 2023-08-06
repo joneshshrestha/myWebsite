@@ -258,6 +258,7 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: 0.25s;
 }
+
 .menu__item {
   display: block;
   padding: 0px 0px 20px 32px;
@@ -336,8 +337,12 @@ body {
   font-size: 14px;
   color: rgb(104, 104, 104);
   margin-top: 5px;
-  text-align: left;
+  text-align: center;
   line-height: 20px;
+}
+
+.work-info h3 {
+  text-align: center;
 }
 
 .work-info button {
@@ -350,8 +355,7 @@ body {
 
 .flex-button {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: space-around;
 }
 
 .work-info button:hover {
@@ -461,6 +465,10 @@ body {
   margin-top: 25px;
 }
 
+.mini-projects {
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 750px) {
   .menu__btn,
   #menu__toggle,
@@ -520,11 +528,19 @@ body {
   }
   .projects {
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 50px;
     justify-content: flex-start;
   }
   .flex-footer {
     margin-right: 2vh;
+  }
+  .work-info h4,
+  .work-info h3 {
+    text-align: left;
+  }
+  .flex-button {
+    justify-content: flex-start;
+    gap: 20px;
   }
 }
 
