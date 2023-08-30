@@ -261,7 +261,7 @@ body {
 
 .menu__item {
   display: block;
-  padding: 0px 0px 20px 32px;
+  padding: 10px 0px 10px 32px;
   color: #333;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
